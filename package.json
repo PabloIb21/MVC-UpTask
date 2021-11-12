@@ -1,0 +1,44 @@
+{
+  "name": "uptask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "desarrollo": "concurrently \"npm run dev\" \"npm run watch\" ",
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js",
+    "watch": "webpack --watch --mode development"
+  },
+  "author": "Pablo Ibarra",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bcrypt-nodejs": "0.0.3",
+    "concurrently": "^6.3.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.13.0",
+    "html-to-text": "^8.1.0",
+    "juice": "^8.0.0",
+    "mysql2": "^2.3.2",
+    "nodemailer": "^6.7.0",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.2",
+    "sequelize": "^6.9.0",
+    "shortid": "^2.2.16",
+    "slug": "^5.1.0",
+    "sweetalert2": "^11.1.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "nodemon": "^2.0.14",
+    "webpack": "^5.62.1",
+    "webpack-cli": "^4.9.1"
+  }
+}
